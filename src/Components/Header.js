@@ -22,7 +22,7 @@ const Header = (props) => {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
+              <NavLink target='_blank' href="https://github.com/Rjts03/activity-generator">GitHub</NavLink>
             </NavItem>
           </Nav>
         </Collapse>

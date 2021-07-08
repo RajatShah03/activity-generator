@@ -36,13 +36,13 @@ const ActivityDetailed = ({ activity, updateActivity }) => {
     <div style={{ minWidth: '45%' }} className='flex-grow-1 flex-shrink-0'>
       <Card className='p-2'>
         <Activity activity={activity} handleStatusChange={editStatus} detailed />
-        <Button onClick={toggle}>
-          {`Expand to ${activity?.description ? 'see' : 'add'} description`}
+        <Button outline color='success' onClick={toggle}>
+          {isOpen ? 'Collapse' : `Expand to ${activity?.description ? 'see' : 'add'} description`}
         </Button>
         <Collapse isOpen={isOpen}>
           {!edit ? (
             <div className='p-4'>
-              <CardText>{desc}</CardText>
+              <CardText className='fs-4'>{desc}</CardText>
               <Button onClick={toggleEdit}>Edit</Button>
             </div>
           ) : (

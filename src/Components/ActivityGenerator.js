@@ -32,7 +32,7 @@ const ActivityGenerator = ({ setActivities }) => {
     <div>
       <Card className='p-4 gap-4 flex-row flex-wrap justify-content-center'>
         <Card className='p-2 border-0 d-flex flex-column flex-grow-1 flex-shrink-0'>
-          <CardTitle>
+          <CardTitle className='fs-2'>
             Activity generator tool
           </CardTitle>
           <CardText>
